@@ -120,7 +120,7 @@ footer {
 
 .player-footer-controls div {
     margin: auto 32px auto 32px;
-    filter: invert(0.9);
+    filter: invert(0.9) !important;
 }
 
 .player-footer-controls #pause-control img {
