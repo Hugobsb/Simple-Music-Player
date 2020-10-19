@@ -44,7 +44,6 @@ module.exports = {
             Promise.all(promisesArray).then(metadata => {
                 for (let i in metadata) {
                     if (typeof imagesArray[i] === 'string') {
-                        console.log(files[i].replace(files[i].slice(files[i].lastIndexOf('.')), '') + '===' + imagesArray[i].replace(imagesArray[i].slice(imagesArray[i].lastIndexOf('.')), ''));
                         if (files[i].replace(files[i].slice(files[i].lastIndexOf('.')), '') === imagesArray[i].replace(imagesArray[i].slice(imagesArray[i].lastIndexOf('.')), '')) {
                             response.push({
                                 path: '/songs/'+files[i],
