@@ -27,6 +27,7 @@ function setupPlayer(index) {
         });
         audio.addEventListener('ended', () => {
             if (!audio.repeat) handleForwarding();
+            else audio.play();
         });
         songPlay();
     });
