@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile-style.css">
+    <title>Player</title>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="player-container">
+        <div class="player-card-container">
+            <div class="player-card">
+                <img src="./src/images/song.jpg" id="song-image" alt="" />
+                <h1 id="autor">Alan Walker</h1>
+                <h2 id="song">Unity</h2>
+            </div>
+        </div>
+        <footer>
+            <div id="player-slider">
+                <p id="initial-number">0:00</p>
+                <input type="range" id="progress" value="0" min="0" step="1" max="200" oninput="handleProgressChange();" />
+                <p id="end-number">0:00</p>
+            </div>
+            <div class="player-footer-controls">
+                <div id="repeat-control" onclick="handleRepeat();">
+                    <img src="./src/icons/repeat.png" alt="Repetir música" title="Repetição desativada" />
+                </div>
+                <div id="backward-control" onclick="handleBackwarding();">
+                    <img src="./src/icons/backward-track.png" alt="Música anterior" title="Música anterior" />
+                </div>
+                <div id="pause-control" onclick="handlePausing();">
+                    <img src="./src/icons/pause.png" id="pause-img" alt="Pausar" title="Pausar" />
+                    <img src="./src/icons/play-footer.png" class="hidden" id="play-img" alt="Reproduzir" title="Reproduzir" />
+                </div>
+                <div id="forward-control" onclick="handleForwarding();">
+                    <img src="./src/icons/forward-track.png" alt="Próxima música" title="Próxima música" />
+                </div>
+                <div id="volume-control">
+                    <img src="./src/icons/speaker.png" alt="Volume" onclick="handleMuting();" />
+                    <input type="range" id="volume" min="0" max="1" value="0.3" step="0.1" oninput="handleVolumeChange();" />
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

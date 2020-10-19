@@ -1,0 +1,40 @@
+{
+  "name": "com.yourcompany.name",
+  "version": "1.0.0",
+  "description": "Description",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [
+    "Insert",
+    "the",
+    "keywords"
+  ],
+  "author": "yourName",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "celebrate": "^12.1.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "get-audio-duration": "^2.0.2",
+    "joi": "^14.3.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.24",
+    "music-metadata": "^7.4.0",
+    "nodemon": "^2.0.2",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hugobsb/template-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hugobsb/template-nodejs/issues"
+  },
+  "homepage": "https://github.com/Hugobsb/template-nodejs#readme"
+}

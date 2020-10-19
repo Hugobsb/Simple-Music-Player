@@ -1,0 +1,23 @@
+@media only screen and (max-width: 660px) {
+    .player-footer-controls #volume-control input {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .player-footer-controls div {
+        margin: auto 24px auto 24px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .player-footer-controls div {
+        margin: auto 18px auto 18px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .player-footer-controls div {
+        margin: auto 12px auto 12px;
+    }
+}
