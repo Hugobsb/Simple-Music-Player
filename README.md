@@ -1,6 +1,6 @@
 # Simple-Music-Player
 
-School presentation for the school ETEC São Mateus created by Hugobsb
+School presentation for ETEC São Mateus created by Hugobsb
 
 # Desktop version
 
