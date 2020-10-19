@@ -1,12 +1,10 @@
 const express = require('express');
-const http = require('http');
 const bodyParser = require('body-parser');
 const path = require('path');
 const routes = require('./routes');
 const favicon = require('serve-favicon');
 
 const app = express();
-const server = http.Server(app);
 
 app.use(express.json());
 app.use(express.static(path.join('public')));
